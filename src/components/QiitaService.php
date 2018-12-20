@@ -28,6 +28,10 @@ class QiitaService
 		/** @var Settings $settings */
 		$settings = Plugin::getInstance()->getSettings();
 		$token = $settings->token;
+		if (empty($token)) {
+		    return [];
+        }
+
 		$url = '/api/v2/authenticated_user/items';
 		$query = [];
 		if (!empty($page)) {
