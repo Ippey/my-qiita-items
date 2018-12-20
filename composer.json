@@ -1,0 +1,32 @@
+{
+    "name": "ippey/qiita-plugin",
+    "description": "",
+    "version": "1.0.0",
+    "type": "craft-plugin",
+    "keywords": ["qiita"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Ippei Sumida",
+            "homepage": "https://unplat.info"
+        }
+    ],
+    "support": {
+        "email": "ippey.s@gmail.com",
+        "issues": "https://github.com/ippey/qiita-plugin/issues?state=open",
+        "source": "https://github.com/ippey/qiita-plugin",
+        "docs": "https://github.com/ippey/qiita-plugin"
+    },
+    "require": {
+        "craftcms/cms": "^3.0.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "ippey\\qiita\\": "src/"
+        }
+    },
+    "extra": {
+        "handle": "plugin-handle",
+        "name": "Plugin Name"
+    }
+}
