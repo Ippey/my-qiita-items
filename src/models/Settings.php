@@ -1,26 +1,24 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: ippei
- * Date: 2018-12-13
- * Time: 17:24
- */
 
-namespace ippey\qiita\models;
+namespace ippey\MyQiitaItems\models;
 
 
 use craft\base\Model;
 
+/**
+ * Class Settings
+ * @package ippey\MyQiitaItems\models
+ */
 class Settings extends Model
 {
-    public $token = '';
+	public $token = '';
 
-    public function rules()
-    {
-        return [
-            [['token'], 'required'],
-        ];
-    }
+	public function rules()
+	{
+		return [
+			[['token'], 'required'],
+		];
+	}
 
 
 }

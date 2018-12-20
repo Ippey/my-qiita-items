@@ -1,6 +1,6 @@
 {
-    "name": "ippey/qiita-plugin",
-    "description": "",
+    "name": "ippey/my-qiita-items",
+    "description": "Enables to access your Qiita items via Twig",
     "version": "1.0.0",
     "type": "craft-plugin",
     "keywords": ["qiita"],
@@ -13,20 +13,22 @@
     ],
     "support": {
         "email": "ippey.s@gmail.com",
-        "issues": "https://github.com/ippey/qiita-plugin/issues?state=open",
-        "source": "https://github.com/ippey/qiita-plugin",
-        "docs": "https://github.com/ippey/qiita-plugin"
+        "issues": "https://github.com/ippey/my-qiita-items/issues?state=open",
+        "source": "https://github.com/ippey/my-qiita-items",
+        "docs": "https://github.com/ippey/my-qiita-items"
     },
     "require": {
-        "craftcms/cms": "^3.0.0"
+        "craftcms/cms": "^3.0.0",
+        "guzzlehttp/guzzle": "^6.3",
+        "ext-json": "*"
     },
     "autoload": {
         "psr-4": {
-            "ippey\\qiita\\": "src/"
+            "ippey\\MyQiitaItems\\": "src/"
         }
     },
     "extra": {
-        "handle": "plugin-handle",
-        "name": "Plugin Name"
+        "handle": "my-qiita-items",
+        "name": "My Qiita Items"
     }
 }
