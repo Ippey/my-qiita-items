@@ -1,7 +1,7 @@
 {
     "name": "ippey/my-qiita-items",
     "description": "Enables to access your Qiita items via Twig",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "type": "craft-plugin",
     "keywords": ["qiita"],
     "license": "MIT",

@@ -20,10 +20,10 @@ class QiitaService
 	 * get my items from Qiita
 	 *
 	 * @param string $page
-	 * @param string $pagePer
+	 * @param string $perPage
 	 * @return array
 	 */
-	public function items($page = '', $pagePer = '')
+	public function items($page = '', $perPage = '')
 	{
 		/** @var Settings $settings */
 		$settings = Plugin::getInstance()->getSettings();
@@ -38,7 +38,7 @@ class QiitaService
 			$query['page'] = $page;
 		}
 		if (!empty($pagePer)) {
-			$query['page_per'] = $pagePer;
+			$query['per_page'] = $perPage;
 		}
 
 		$client = new Client([
