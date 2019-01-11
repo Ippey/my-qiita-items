@@ -37,7 +37,7 @@ class QiitaService
 		if (!empty($page)) {
 			$query['page'] = $page;
 		}
-		if (!empty($pagePer)) {
+		if (!empty($perPage)) {
 			$query['per_page'] = $perPage;
 		}
 
