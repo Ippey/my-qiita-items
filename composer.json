@@ -1,7 +1,7 @@
 {
     "name": "ippey/my-qiita-items",
     "description": "Enables to access your Qiita items via Twig",
-    "version": "1.0.1",
+    "version": "1.1.0",
     "type": "craft-plugin",
     "keywords": ["qiita"],
     "license": "MIT",
@@ -18,8 +18,9 @@
         "docs": "https://github.com/ippey/my-qiita-items"
     },
     "require": {
-        "craftcms/cms": "^3.0.0",
-        "guzzlehttp/guzzle": "^6.3",
+        "php": "^8.0.2|^9.0",
+        "craftcms/cms": "^3.0.0|^4.0.0",
+        "guzzlehttp/guzzle": "^7.4",
         "ext-json": "*"
     },
     "autoload": {
@@ -30,5 +31,11 @@
     "extra": {
         "handle": "my-qiita-items",
         "name": "My Qiita Items"
+    },
+    "config": {
+        "allow-plugins": {
+            "yiisoft/yii2-composer": true,
+            "craftcms/plugin-installer": true
+        }
     }
 }
