@@ -13,7 +13,7 @@ class Settings extends Model
 {
 	public $token = '';
 
-	public function rules()
+	public function rules(): array
 	{
 		return [
 			[['token'], 'required'],

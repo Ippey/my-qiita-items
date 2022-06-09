@@ -10,7 +10,7 @@ use yii\base\Event;
 class Plugin extends \craft\base\Plugin
 {
 
-	public $hasCpSettings = true;
+	public bool $hasCpSettings = true;
 
 	public function init()
 	{
@@ -25,7 +25,7 @@ class Plugin extends \craft\base\Plugin
 		});
 	}
 
-	protected function createSettingsModel()
+	protected function createSettingsModel(): Settings
 	{
 		return new Settings();
 	}
@@ -35,7 +35,7 @@ class Plugin extends \craft\base\Plugin
 	 * @throws \Twig_Error_Loader
 	 * @throws \yii\base\Exception
 	 */
-	protected function settingsHtml()
+	protected function settingsHtml(): ?string
 	{
 		return \Craft::$app->getView()->renderTemplate('my-qiita-items/settings', [
 			'settings' => $this->getSettings(),
